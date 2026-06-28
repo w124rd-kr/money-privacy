@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juns Money 개인정보 처리방침 · Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --card: #ffffff;
+      --ink: #2b2b2b;
+      --muted: #6b6760;
+      --accent: #e8772e;
+      --line: #ece7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+    header { border-bottom: 2px solid var(--accent); padding-bottom: 16px; margin-bottom: 8px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    .sub { color: var(--muted); font-size: .92rem; }
+    .lang { margin: 18px 0 28px; font-size: .9rem; }
+    .lang a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin: 16px 0; }
+    h2 { font-size: 1.15rem; margin: 4px 0 12px; }
+    h2 .n { color: var(--accent); margin-right: 6px; }
+    p, li { font-size: .98rem; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin: 4px 0; }
+    .pill { display: inline-block; background: #fff3e8; color: var(--accent); border-radius: 999px; padding: 2px 10px; font-size: .8rem; font-weight: 600; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: .85rem; text-align: center; margin-top: 40px; }
+    .hr { height: 1px; background: var(--line); border: 0; margin: 56px 0 40px; }
+    code { background: #f3efe8; padding: 1px 6px; border-radius: 6px; font-size: .9em; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===================== 한국어 ===================== -->
+  <header>
+    <h1>개인정보 처리방침</h1>
+    <div class="sub">Juns Money (가계부 앱) · 제공자: Juns Works</div>
+  </header>
+  <div class="lang">언어: <strong>한국어</strong> · <a href="#en">English ↓</a></div>
+
+  <p>
+    Juns Money(이하 "앱")는 사용자의 개인정보를 소중하게 생각합니다.
+    이 앱은 <strong>가계부 데이터를 사용자의 기기에 직접 저장하는 로컬 우선(local-first)</strong>
+    방식으로 동작하며, 개발자는 사용자의 금융 데이터를 수집하거나 열람하지 않습니다.
+    본 방침은 앱이 어떤 정보를 다루는지, 어디에 저장되는지 설명합니다.
+  </p>
+  <p class="sub">시행일: 2026년 6월 28일</p>
+
+  <section>
+    <h2><span class="n">1.</span>기기에 저장되는 가계부 데이터 <span class="pill">기기 내부 · 비전송</span></h2>
+    <p>
+      거래 내역, 금액, 메모, 자산(계좌), 분류, 예정·반복 거래 등 사용자가 입력한 모든
+      가계부 데이터는 <strong>사용자 기기 내부의 데이터베이스에만 저장</strong>됩니다.
+      이 데이터는 개발자의 서버로 전송되지 않으며, 개발자는 이를 수집하거나 접근할 수 없습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">2.</span>백업 (선택) <span class="pill">사용자 소유 저장소</span></h2>
+    <ul>
+      <li><strong>iCloud 백업:</strong> 사용자가 활성화하면 백업 파일이 사용자 본인의
+        iCloud 계정(Apple)에 저장됩니다. 개발자는 해당 파일에 접근할 수 없습니다.</li>
+      <li><strong>수동 백업 파일:</strong> 사용자가 직접 내보낸 백업 파일을 원하는 위치
+        (파일 앱, 공유 등)에 저장합니다.</li>
+      <li>백업 파일은 비밀번호 기반 <strong>AES-GCM 암호화</strong>로 보호될 수 있습니다.
+        복원에는 사용자가 설정한 비밀번호가 필요합니다.</li>
+    </ul>
+    <p class="sub">백업은 전적으로 사용자 본인의 저장소에서 이루어지며 개발자 서버를 거치지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3.</span>익명 사용 통계 <span class="pill">PII 없음 · 옵트아웃 가능</span></h2>
+    <p>
+      앱 개선을 위해 <strong>익명 사용 통계</strong>를 수집합니다. 분석 도구는
+      <a href="https://aptabase.com" target="_blank" rel="noopener">Aptabase</a>를 사용합니다.
+    </p>
+    <ul>
+      <li>수집 항목: 화면 조회(어느 화면을 봤는지), 기능 사용 횟수, 거래 유형
+        (지출/수입/이체 같은 식별 불가능한 분류값), 앱 버전, OS 종류, 대략적인 사용 빈도.</li>
+      <li><strong>수집하지 않는 것:</strong> 금액, 거래 메모, 결제처, 자산명, 분류 이름,
+        이름·이메일 등 어떤 개인 식별 정보도 보내지 않습니다.</li>
+      <li>광고 식별자(IDFA), 쿠키를 사용하지 않으며 사용자나 기기를 추적하지 않습니다.</li>
+      <li>데이터는 미국(US) 리전에서 처리됩니다.</li>
+      <li><strong>설정 → 사용 통계 수집</strong>에서 언제든지 끌 수 있습니다(옵트아웃).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">4.</span>문의·건의하기 <span class="pill">사용자가 직접 입력</span></h2>
+    <p>
+      앱 내 "문의·건의" 기능으로 의견을 보내면, 작성한 <strong>메시지 내용</strong>과
+      (선택 입력 시) <strong>회신용 이메일 주소</strong>, 그리고 진단을 위한
+      <strong>앱 버전·OS 정보</strong>가 개발자의 이메일로 전송됩니다.
+      전송에는 폼-투-메일 서비스(Web3Forms)를 사용합니다. 이 기능을 사용하지 않으면 어떤 정보도 전송되지 않습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">5.</span>알림 <span class="pill">기기 내부</span></h2>
+    <p>
+      예정 거래 등에 대한 알림은 사용자 기기에서 로컬로 생성·표시됩니다.
+      알림을 위해 외부로 데이터를 전송하지 않습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">6.</span>광고·제3자 추적 없음</h2>
+    <p>
+      이 앱은 광고를 게재하지 않으며, 광고 네트워크나 제3자 추적 도구를 포함하지 않습니다.
+      회원가입이나 로그인도 필요하지 않습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">7.</span>아동의 개인정보</h2>
+    <p>
+      이 앱은 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">8.</span>방침 변경</h2>
+    <p>
+      본 방침은 필요에 따라 갱신될 수 있으며, 변경 시 이 페이지에 게시합니다.
+      중요한 변경이 있을 경우 시행일을 갱신합니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">9.</span>문의처</h2>
+    <p>
+      개인정보 처리에 관한 문의: <a href="mailto:ch4n9w00n.ch01@gmail.com">ch4n9w00n.ch01@gmail.com</a><br>
+      제공자: Juns Works
+    </p>
+  </section>
+
+  <hr class="hr" />
+
+  <!-- ===================== English ===================== -->
+  <header id="en">
+    <h1>Privacy Policy</h1>
+    <div class="sub">Juns Money (personal budget app) · Provider: Juns Works</div>
+  </header>
+  <div class="lang">Language: <a href="#top">한국어 ↑</a> · <strong>English</strong></div>
+
+  <p>
+    Juns Money ("the app") respects your privacy. The app is
+    <strong>local-first</strong>: your budget data is stored directly on your device,
+    and the developer does not collect or have access to your financial data.
+    This policy explains what information the app handles and where it is stored.
+  </p>
+  <p class="sub">Effective date: June 28, 2026</p>
+
+  <section>
+    <h2><span class="n">1.</span>Budget data stored on your device <span class="pill">On-device · Not transmitted</span></h2>
+    <p>
+      All data you enter — transactions, amounts, memos, accounts/assets, categories,
+      scheduled and recurring entries — is stored <strong>only in a database on your device</strong>.
+      This data is never sent to the developer's servers, and the developer cannot access it.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">2.</span>Backup (optional) <span class="pill">Your own storage</span></h2>
+    <ul>
+      <li><strong>iCloud backup:</strong> if you enable it, backup files are stored in
+        <em>your own</em> iCloud account (Apple). The developer cannot access them.</li>
+      <li><strong>Manual backup files:</strong> you export a backup file and save it
+        wherever you choose (Files, share sheet, etc.).</li>
+      <li>Backup files can be protected with password-based <strong>AES-GCM encryption</strong>;
+        restoring requires the password you set.</li>
+    </ul>
+    <p class="sub">Backups happen entirely in your own storage and never pass through the developer's servers.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3.</span>Anonymous usage analytics <span class="pill">No PII · Opt-out</span></h2>
+    <p>
+      To improve the app, we collect <strong>anonymous usage statistics</strong> using
+      <a href="https://aptabase.com" target="_blank" rel="noopener">Aptabase</a>.
+    </p>
+    <ul>
+      <li>Collected: screen views, feature-usage counts, transaction type
+        (non-identifying enums like expense/income/transfer), app version, OS, and approximate usage frequency.</li>
+      <li><strong>Never collected:</strong> amounts, memos, payees, account names, category names,
+        or any personally identifying information such as your name or email.</li>
+      <li>No advertising identifier (IDFA) and no cookies are used; we do not track users or devices.</li>
+      <li>Data is processed in the US region.</li>
+      <li>You can turn this off anytime in <strong>Settings → Usage statistics</strong> (opt-out).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">4.</span>Contact &amp; feedback <span class="pill">You provide it</span></h2>
+    <p>
+      When you send feedback through the in-app form, the <strong>message you write</strong>,
+      an optional <strong>reply email address</strong>, and <strong>app version / OS info</strong>
+      for diagnostics are sent to the developer's email via a form-to-email service (Web3Forms).
+      If you don't use this feature, nothing is sent.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">5.</span>Notifications <span class="pill">On-device</span></h2>
+    <p>
+      Notifications (e.g., for scheduled transactions) are generated and shown locally on your device.
+      No data is transmitted externally for notifications.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">6.</span>No ads or third-party tracking</h2>
+    <p>
+      The app shows no ads and includes no advertising networks or third-party trackers.
+      No account or sign-in is required.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="n">7.</span>Children's privacy</h2>
+    <p>The app is not directed at children and does not knowingly collect children's personal information.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">8.</span>Changes to this policy</h2>
+    <p>We may update this policy as needed and will post changes on this page, updating the effective date for material changes.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">9.</span>Contact</h2>
+    <p>
+      Questions about privacy: <a href="mailto:ch4n9w00n.ch01@gmail.com">ch4n9w00n.ch01@gmail.com</a><br>
+      Provider: Juns Works
+    </p>
+  </section>
+
+  <footer>© 2026 Juns Works · Juns Money</footer>
+</div>
+</body>
+</html>
