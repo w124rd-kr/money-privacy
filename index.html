@@ -58,7 +58,7 @@
     방식으로 동작하며, 개발자는 사용자의 금융 데이터를 수집하거나 열람하지 않습니다.
     본 방침은 앱이 어떤 정보를 다루는지, 어디에 저장되는지 설명합니다.
   </p>
-  <p class="sub">시행일: 2026년 6월 28일</p>
+  <p class="sub">시행일: 2026년 6월 30일</p>
 
   <section>
     <h2><span class="n">1.</span>기기에 저장되는 가계부 데이터 <span class="pill">기기 내부 · 비전송</span></h2>
@@ -70,14 +70,17 @@
   </section>
 
   <section>
-    <h2><span class="n">2.</span>백업 (선택) <span class="pill">사용자 소유 저장소</span></h2>
+    <h2><span class="n">2.</span>백업 (선택) <span class="pill">사용자 소유 저장소 · 제로지식 암호화</span></h2>
     <ul>
-      <li><strong>iCloud 백업:</strong> 사용자가 활성화하면 백업 파일이 사용자 본인의
-        iCloud 계정(Apple)에 저장됩니다. 개발자는 해당 파일에 접근할 수 없습니다.</li>
+      <li><strong>iCloud 자동 백업:</strong> 사용자가 활성화하면 백업 파일이 사용자 본인의
+        iCloud 계정(Apple)에 저장됩니다. 기기를 바꾸면 같은 iCloud 백업에서 데이터를
+        복원할 수 있습니다. 개발자는 해당 파일에 접근할 수 없습니다.</li>
       <li><strong>수동 백업 파일:</strong> 사용자가 직접 내보낸 백업 파일을 원하는 위치
         (파일 앱, 공유 등)에 저장합니다.</li>
-      <li>백업 파일은 비밀번호 기반 <strong>AES-GCM 암호화</strong>로 보호될 수 있습니다.
-        복원에는 사용자가 설정한 비밀번호가 필요합니다.</li>
+      <li><strong>모든 백업 파일은 사용자가 설정한 비밀번호로 AES-256-GCM 암호화</strong>
+        (PBKDF2 키 유도)됩니다. 이 비밀번호는 사용자 기기에만 보관되며 개발자에게
+        전송되지 않습니다. 따라서 개발자는 백업 파일을 입수하더라도 복호화할 수 없습니다
+        (제로지식). 복원에는 그 비밀번호가 필요하며, 분실 시 복원이 불가능합니다.</li>
     </ul>
     <p class="sub">백업은 전적으로 사용자 본인의 저장소에서 이루어지며 개발자 서버를 거치지 않습니다.</p>
   </section>
@@ -143,7 +146,7 @@
   <section>
     <h2><span class="n">9.</span>문의처</h2>
     <p>
-      개인정보 처리에 관한 문의: <a href="mailto:ch4n9w00n.ch01@gmail.com">ch4n9w00n.ch01@gmail.com</a><br>
+      개인정보 처리에 관한 문의: <a href="mailto:junsworks.kr@gmail.com">junsworks.kr@gmail.com</a><br>
       제공자: Juns Works
     </p>
   </section>
@@ -163,7 +166,7 @@
     and the developer does not collect or have access to your financial data.
     This policy explains what information the app handles and where it is stored.
   </p>
-  <p class="sub">Effective date: June 28, 2026</p>
+  <p class="sub">Effective date: June 30, 2026</p>
 
   <section>
     <h2><span class="n">1.</span>Budget data stored on your device <span class="pill">On-device · Not transmitted</span></h2>
@@ -175,14 +178,17 @@
   </section>
 
   <section>
-    <h2><span class="n">2.</span>Backup (optional) <span class="pill">Your own storage</span></h2>
+    <h2><span class="n">2.</span>Backup (optional) <span class="pill">Your own storage · Zero-knowledge</span></h2>
     <ul>
-      <li><strong>iCloud backup:</strong> if you enable it, backup files are stored in
-        <em>your own</em> iCloud account (Apple). The developer cannot access them.</li>
+      <li><strong>iCloud automatic backup:</strong> if you enable it, backup files are stored in
+        <em>your own</em> iCloud account (Apple). On a new device you can restore your data from
+        the same iCloud backup. The developer cannot access these files.</li>
       <li><strong>Manual backup files:</strong> you export a backup file and save it
         wherever you choose (Files, share sheet, etc.).</li>
-      <li>Backup files can be protected with password-based <strong>AES-GCM encryption</strong>;
-        restoring requires the password you set.</li>
+      <li><strong>Every backup file is encrypted with a password you set, using AES-256-GCM</strong>
+        (PBKDF2 key derivation). This password is kept only on your device and is never sent to the
+        developer, so the developer cannot decrypt a backup file even if they obtained it
+        (zero-knowledge). Restoring requires that password; if you lose it, the backup cannot be restored.</li>
     </ul>
     <p class="sub">Backups happen entirely in your own storage and never pass through the developer's servers.</p>
   </section>
@@ -243,7 +249,7 @@
   <section>
     <h2><span class="n">9.</span>Contact</h2>
     <p>
-      Questions about privacy: <a href="mailto:ch4n9w00n.ch01@gmail.com">ch4n9w00n.ch01@gmail.com</a><br>
+      Questions about privacy: <a href="mailto:junsworks.kr@gmail.com">junsworks.kr@gmail.com</a><br>
       Provider: Juns Works
     </p>
   </section>
